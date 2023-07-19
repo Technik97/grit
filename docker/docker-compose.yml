@@ -1,0 +1,27 @@
+version: '3.4'
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - grit-db-volume:/var/lib/postgresql/data/
+    env_file:
+      - postgres/postgresql.env
+  dev-env:
+    container_name: dev_env
+    build:
+      context: ./dev_env
+    volumes:
+      - "..:/workspace"
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - ./data:/var/lib/redis/data
+volumes:
+  grit-db-volume: null
