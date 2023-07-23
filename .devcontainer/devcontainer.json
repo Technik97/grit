@@ -1,0 +1,16 @@
+{
+    "name": "Grit",
+    "dockerComposeFile": ["../docker/docker-compose.yaml"],
+    "service": "dev_env",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "ms-dotnettools.vscode-dotnet-runtime",
+                "dsznajder.es7-react-js-snippets"
+                ]
+          }
+    },
+    "remoteUser": "root"
+}
