@@ -7,8 +7,8 @@
         "vscode": {
             "extensions": [
                 "ms-dotnettools.csharp",
-                "ms-dotnettools.vscode-dotnet-runtime",
-                "dsznajder.es7-react-js-snippets"
+                "svelte.svelte-vscode",
+                "ms-dotnettools.vscode-dotnet-runtime"
                 ]
           }
     },

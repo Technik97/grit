@@ -28,7 +28,7 @@ namespace Grit.Database.Migrations
             migrationBuilder.InsertData(
                 table: "Habits",
                 columns: new[] { "Id", "Description", "Name" },
-                values: new object[] { 100, "Lose some weight", "Exercise" });
+                values: new object[] { 100, "For testing", "Test" });
         }
 
         /// <inheritdoc />

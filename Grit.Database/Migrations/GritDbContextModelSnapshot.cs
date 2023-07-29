@@ -45,8 +45,8 @@ namespace Grit.Database.Migrations
                         new
                         {
                             Id = 100,
-                            Description = "Lose some weight",
-                            Name = "Exercise"
+                            Description = "For testing",
+                            Name = "Test"
                         });
                 });
 #pragma warning restore 612, 618

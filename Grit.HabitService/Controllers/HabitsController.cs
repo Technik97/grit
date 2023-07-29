@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 using Grit.HabitService.Dtos;
+using Grit.HabitService.Interfaces;
 
 namespace Grit.HabitService.Controllers;
 

@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Grit.Database.Migrations
 {
     [DbContext(typeof(GritDbContext))]
-    [Migration("20230719164248_InitialSetup")]
+    [Migration("20230729180413_InitialSetup")]
     partial class InitialSetup
     {
         /// <inheritdoc />
@@ -48,8 +48,8 @@ namespace Grit.Database.Migrations
                         new
                         {
                             Id = 100,
-                            Description = "Lose some weight",
-                            Name = "Exercise"
+                            Description = "For testing",
+                            Name = "Test"
                         });
                 });
 #pragma warning restore 612, 618

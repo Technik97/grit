@@ -1,9 +1,10 @@
-using Microsoft.EntityFramewrokCore;
+using Microsoft.EntityFrameworkCore;
 
 using Grit.Database.Entities;
 using Grit.Database;
+using Grit.HabitService.Interfaces;
 
-namespace GoodHabits.HabitService.Services;
+namespace Grit.HabitService.Services;
 
 public class HabitService : IHabitService
 {
@@ -13,7 +14,7 @@ public class HabitService : IHabitService
 
     public async Task<Habit> Create(string name, string description)
     {
-        var habit = _dbContext.Habits!.Add(new HabitService {
+        var habit = _dbContext.Habits!.Add(new Habit {
             Name = name,
             Description = description
         }).Entity;
@@ -26,6 +27,6 @@ public class HabitService : IHabitService
     public async Task<IReadOnlyList<Habit>> GetAll() => 
         await _dbContext.Habits!.ToListAsync();
 
-    public async Task<HabitService> GetById(int id) => 
+    public async Task<Habit> GetById(int id) => 
         await _dbContext.Habits.FindAsync(id);
 }

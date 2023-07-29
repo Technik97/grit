@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grit.Database", "Grit.Database\Grit.Database.csproj", "{27793FDC-6EF2-4201-B028-C662A499D789}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grit.HabitService", "Grit.HabitService\Grit.HabitService.csproj", "{DD33EECC-11E6-4131-933D-940399C5F0C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{27793FDC-6EF2-4201-B028-C662A499D789}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27793FDC-6EF2-4201-B028-C662A499D789}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27793FDC-6EF2-4201-B028-C662A499D789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD33EECC-11E6-4131-933D-940399C5F0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD33EECC-11E6-4131-933D-940399C5F0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD33EECC-11E6-4131-933D-940399C5F0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD33EECC-11E6-4131-933D-940399C5F0C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
