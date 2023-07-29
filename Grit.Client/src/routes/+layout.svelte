@@ -1,6 +1,6 @@
 <script>
     import "../app.css"
-	import Navbar from "../components/Navbar.svelte";
+	import Navbar from "../components/common/Navbar.svelte";
 
 
 	let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
