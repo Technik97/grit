@@ -30,6 +30,7 @@ public class HabitsController : ControllerBase
         Ok(await _habitService.GetAll());
 
     [HttpPost]
-    public async Task<IActionResult> CreateAsync(CreateHabitDto request) =>
+    [Consumes("application/x-www-form-urlencoded")]
+    public async Task<IActionResult> CreateAsync([FromForm]CreateHabitDto request) =>
         Ok(await _habitService.Create(request.Name, request.Description));    
 }
